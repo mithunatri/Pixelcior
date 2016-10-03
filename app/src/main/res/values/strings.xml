@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pixelcior</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sepia">Sepia</string>
+    <string name="sobel">Sobel</string>
+    <string name="shading">Shading</string>
+    <string name="sharpen">Sharpen</string>
+</resources>
