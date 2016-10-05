@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SepiaFilterActivity"/>
+        <activity android:name=".ShadingFilterActivity"/>
+        <activity android:name=".SharpenFilterActivity"/>
     </application>
 
 </manifest>

@@ -96,7 +96,6 @@ public class PhotoFilterMainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, SepiaFilterActivity.class);
                 intent.putExtra("IMAGE_RESOURCE_ID", String.valueOf(id));
                 intent.putExtra("DRAWABLE_ID", String.valueOf(drawableId));
-
                 startActivity(intent);
                 break;
             case "Sobel":
@@ -104,9 +103,17 @@ public class PhotoFilterMainActivity extends AppCompatActivity {
                 break;
             case "Sharpen":
                 Log.i(TAG, "Sharpen Filter Clicked");
+                Intent intentForSharpen = new Intent(this, SharpenFilterActivity.class);
+                intentForSharpen.putExtra("IMAGE_RESOURCE_ID", String.valueOf(id));
+                intentForSharpen.putExtra("DRAWABLE_ID", String.valueOf(drawableId));
+                startActivity(intentForSharpen);
                 break;
             case "Shading":
                 Log.i(TAG, "Shading Filter Clicked");
+                Intent intentForShading = new Intent(this, ShadingFilterActivity.class);
+                intentForShading.putExtra("IMAGE_RESOURCE_ID", String.valueOf(id));
+                intentForShading.putExtra("DRAWABLE_ID", String.valueOf(drawableId));
+                startActivity(intentForShading);
                 break;
             default:
                 Log.i(TAG, "Nothing was clicked.");
