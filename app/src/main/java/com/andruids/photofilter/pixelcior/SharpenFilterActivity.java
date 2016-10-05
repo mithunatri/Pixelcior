@@ -42,8 +42,9 @@ public class SharpenFilterActivity extends Activity {
 
         Log.i("SharpenFilterActivity: ", "Image View set");
 
-        float[] coeff = {1, 1, 1, 1, -7, 1, 1, 1, 1};
-        convolve (bmIn, coeff);
+        float[] coeff = {0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 5, -1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0};
+        float[] coeff3 = {-2, -1, 0, -1, 1, 1, 0, 1, 2};
+        convolve(bmIn, coeff3);
 
         out.setImageBitmap(bmOut);
         out.invalidate();

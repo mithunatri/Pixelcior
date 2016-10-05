@@ -43,7 +43,7 @@ public class ShadingFilterActivity extends Activity {
 
         Log.i("ShadingFilterActivity: ", "Image View set");
 
-        applyShadingFilter(bmIn, Color.GRAY);
+        applyShadingFilter(bmIn, Color.MAGENTA);
         out.setImageBitmap(bmOut);
         out.invalidate();
     }
