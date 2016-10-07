@@ -13,12 +13,12 @@
     tools:showIn="@layout/activity_photo_filter_main">
 
     <ImageView
-        android:id="@+id/car"
+        android:id="@+id/test3"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/car"
-        android:tag="car"
+        android:src="@drawable/test3"
+        android:tag="test3"
         android:onClick="showFilterOptions"/>
 
     <ImageView

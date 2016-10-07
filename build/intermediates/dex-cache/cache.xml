@@ -1,2 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aa1d97a0c2e93139161d04757a4df72807b0b410">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_44d8483ef1100731b1bd0648ae8936a3fff90de2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.0_c60361a199fe0bcd0f610a73713175a0d394687d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fc834ac8147bc4ed0b555f90f500a57d4232c448">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_3090e1f9e8d5daf4388077aa573a46bb83c998c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_585165838ec8446c50097a7c9a74fb6b204030d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.0_21d3f1546ff87384929445664013631058eedfc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.0_c24c951d421b1bd40cceb0d3edb0f63f86dd2fd4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.0_d27c429fc27f3c9f4411f6d69eab3cf19fe5df4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f022f94dfb16de2aa31d0bf7bff74df8be28a12a">
+        <dex dex="/Users/sunny/ub/fall-2016/cse-622/code/Pixelcior/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4070d49f80bcf79a40e5361e1fbfe6f608488555/classes.dex" />
+    </item>
+
+</items>

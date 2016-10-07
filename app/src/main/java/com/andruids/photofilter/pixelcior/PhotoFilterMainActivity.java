@@ -101,6 +101,13 @@ public class PhotoFilterMainActivity extends AppCompatActivity {
                 break;
             case "Sobel":
                 Log.i(TAG, "Sobel Filter Clicked");
+
+                Intent sobelIntent = new Intent(this, SobelFilterActivity.class);
+                sobelIntent.putExtra("IMAGE_RESOURCE_ID", String.valueOf(id));
+                sobelIntent.putExtra("DRAWABLE_ID", String.valueOf(drawableId));
+
+                startActivity(sobelIntent);
+
                 break;
             case "Sharpen":
                 Log.i(TAG, "Sharpen Filter Clicked");
