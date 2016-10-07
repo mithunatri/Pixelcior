@@ -111,12 +111,12 @@ public class SobelFilterActivity extends Activity {
         script.set_gOut(outAllocation);
         script.set_gScript(script);
 
-        script.forEach_SobelFirstPass(inAllocation, outAllocation);
-        script.forEach_SobelSecondPass(inAllocation, outAllocation);
+        script.forEach_derivativeX(inAllocation, outAllocation);
+        script.forEach_derivativeY(inAllocation, outAllocation);
 
 //
 //       script.invoke_sobel();
-        Log.i("SepiaFilterActivity: ", "Script invocation complete");
+        Log.i(TAG, "Script invocation complete");
     }
 
 }
