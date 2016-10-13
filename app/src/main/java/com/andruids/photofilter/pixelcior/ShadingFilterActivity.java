@@ -4,8 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LightingColorFilter;
+import android.graphics.Paint;
 import android.os.Bundle;
+import android.renderscript.Allocation;
+import android.renderscript.RenderScript;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -48,27 +53,22 @@ public class ShadingFilterActivity extends Activity {
         out.invalidate();
     }
 
-    public Bitmap applyShadingFilter(Bitmap source, int shadingColor) {
-        // get image size
-        int width = source.getWidth();
-        int height = source.getHeight();
-        int[] pixels = new int[width * height];
-        // get pixel array from source
-        source.getPixels(pixels, 0, width, 0, 0, width, height);
+    public Bitmap applyShadingFilter(Bitmap original, int shadingColor) {
 
-        int index = 0;
-        // iteration through pixels
-        for(int y = 0; y < height; ++y) {
-            for(int x = 0; x < width; ++x) {
-                // get current index in 2D-matrix
-                index = y * width + x;
-                // AND
-                pixels[index] &= shadingColor;
-            }
-        }
-        // output bitmap
-        bmOut = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        bmOut.setPixels(pixels, 0, width, 0, 0, width, height);
-        return bmOut;
+        Bitmap bitmap = Bitmap.createBitmap(original.getWidth(),
+                original.getHeight(), Bitmap.Config.ARGB_8888);
+        RenderScript rs = RenderScript.create(this);
+
+        Allocation allocOut = Allocation.createFromBitmap(rs, bitmap);
+
+        Canvas canvas = new Canvas(bitmap);
+        Paint paint = new Paint();
+        paint.setColorFilter(new LightingColorFilter(shadingColor, 0));
+        canvas.drawBitmap(original, 0, 0, paint);
+
+        allocOut.copyTo(bmOut);
+        rs.destroy();
+
+        return bitmap;
     }
 }
